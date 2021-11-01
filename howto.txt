@@ -4,10 +4,10 @@ Hugo, with and without drafts:
   -D, --buildDrafts            include content marked as draft
   -d, --destination string     filesystem path to write files to
 
-hugo -b https://kodu.ut.ee/~kmoch/ --destination public
+hugo -b https://allixender.github.io/30daymaps2021/ --destination docs
+touch docs/.nojekyll
 
-hugo -b https://kodu.ut.ee/~kmoch/ -D
 
-hugo -b http://localhost/ -D serve
+hugo -b https://allixender.github.io/30daymaps2021/ -D
 
-https://themes.gohugo.io/themes/showcase-hugo-theme/
+hugo server -b http://localhost/ -D --disableFastRender
