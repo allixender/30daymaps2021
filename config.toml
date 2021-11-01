@@ -1,0 +1,46 @@
+baseURL = "https://example.com/"
+languageCode = "en-us"
+title = "#DayMapChallenge 2021"
+theme = "mediumish-gohugo-theme"
+summaryLength = 25
+copyright = "Alexander Kmoch"
+enableEmoji = true
+publishDir = "docs"
+#disqusShortname = "your-shortname-here"
+#googleAnalytics = "UA-1XXXXXXX1-1"
+
+[params]
+  logo = "/images/logo.png"
+  description ="map maps maps"
+  #mailchimp = "you can provide a mailchimp-link here"
+
+[params.author]
+  name = "Alexander Kmoch"
+  thumbnail = "/images/alex_hat.jpg"
+  description = "Geoinformatics, Tartu, Estonia."
+
+[params.index]
+  picture = "/images/30dmpc_2021.png"
+  title = "#30DayMapChallenge 2021"
+  subtitle = "I try making some maps again..."
+  mdtext = '''
+This is my repo for [it](https://github.com/tjukanovt/30DayMapChallenge)
+'''
+  alertbar = false
+
+[params.social]
+  github = "allixender"
+  linkedin = "allixender"
+  twitter = "allixender"
+
+## Main Menu
+[[menu.main]]
+    name = "Maps"
+    weight = 100
+    identifier = "blog"
+    url = "/blog"
+[[menu.main]]
+    name = "About this page"
+    identifier = "about"
+    weight = 200
+    url = "/"

@@ -1,0 +1,13 @@
+Hugo, with and without drafts:
+
+  -b, --baseURL string         hostname (and path) to the root, e.g. https://kodu.ut.ee/~kmoch/
+  -D, --buildDrafts            include content marked as draft
+  -d, --destination string     filesystem path to write files to
+
+hugo -b https://kodu.ut.ee/~kmoch/ --destination public
+
+hugo -b https://kodu.ut.ee/~kmoch/ -D
+
+hugo -b http://localhost/ -D serve
+
+https://themes.gohugo.io/themes/showcase-hugo-theme/
