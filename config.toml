@@ -1,4 +1,4 @@
-baseURL = "https://example.com/"
+baseURL = "https://allixender.github.io/30daymaps2021/"
 languageCode = "en-us"
 title = "#DayMapChallenge 2021"
 theme = "mediumish-gohugo-theme"
