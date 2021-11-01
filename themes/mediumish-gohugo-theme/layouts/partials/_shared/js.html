@@ -9,4 +9,5 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 {{ $mediumish := resources.Get "/js/mediumish.js" | resources.Fingerprint }}
-<script src="{{ $mediumish.RelPermalink | absURL }}" integrity="{{ $mediumish.Data.Integrity }}"></script>
+<script src="{{ $mediumish.RelPermalink | absURL }}" ></script>
+<!-- integrity="{ { $mediumish.Data.Integrity } }" -->
