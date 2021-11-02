@@ -37,8 +37,8 @@ This is my repo for [it](https://github.com/tjukanovt/30DayMapChallenge)
 [[menu.main]]
     name = "Maps"
     weight = 100
-    identifier = "blog"
-    url = "/blog"
+    identifier = "maps"
+    url = "/maps"
 [[menu.main]]
     name = "About this page"
     identifier = "about"

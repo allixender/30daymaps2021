@@ -9,13 +9,12 @@
     <copyright>Alexander Kmoch</copyright>
     <lastBuildDate>Mon, 01 Nov 2021 22:42:04 +0200</lastBuildDate><atom:link href="https://allixender.github.io/30daymaps2021/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Day 01</title>
-      <link>https://allixender.github.io/30daymaps2021/blog/day-01/</link>
+      <title>Day 01 Points</title>
+      <link>https://allixender.github.io/30daymaps2021/maps/day-01/</link>
       <pubDate>Mon, 01 Nov 2021 22:42:04 +0200</pubDate>
       
-      <guid>https://allixender.github.io/30daymaps2021/blog/day-01/</guid>
-      <description>Day 01 Points Placenames in Estonia
- https://metadata.geoportaal.ee/geonetwork/srv/eng/catalog.search#/home https://metadata.geoportaal.ee/geonetwork/srv/eng/catalog.search#/metadata/siseministeerium_knr a WFS from the Estonian Geoportal: https://inspire.geoportaal.ee/geoserver/GN_kohanimed/wfs the OWSlib from OSGeo GeoPython: https://geopython.github.io/OWSLib/usage.html#wfs loading all the 371237 points in the service aggregating with DataShader: https://datashader.</description>
+      <guid>https://allixender.github.io/30daymaps2021/maps/day-01/</guid>
+      <description>Placenames in Estonia  https://metadata.geoportaal.ee/geonetwork/srv/eng/catalog.search#/home https://metadata.geoportaal.ee/geonetwork/srv/eng/catalog.search#/metadata/siseministeerium_knr a WFS from the Estonian Geoportal: https://inspire.geoportaal.ee/geoserver/GN_kohanimed/wfs the OWSlib from OSGeo GeoPython: https://geopython.github.io/OWSLib/usage.html#wfs loading all the 371237 points in the service aggregating with DataShader: https://datashader.</description>
     </item>
     
     <item>

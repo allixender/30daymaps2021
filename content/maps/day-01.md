@@ -1,5 +1,5 @@
 ---
-title: "Day 01"
+title: "Day 01 Points"
 date: 2021-11-01T22:42:04+02:00
 image: "/images/maps/day_01_cover.png"
 tags: ["maps"]
@@ -7,11 +7,9 @@ comments: false
 draft: false
 ---
 
-# Day 01 Points
+## Placenames in Estonia
 
-*Placenames in Estonia*
-
-![](/images/maps/day_01.png)
+![](../../images/maps/day_01.png)
 
 - https://metadata.geoportaal.ee/geonetwork/srv/eng/catalog.search#/home
 - https://metadata.geoportaal.ee/geonetwork/srv/eng/catalog.search#/metadata/siseministeerium_knr
