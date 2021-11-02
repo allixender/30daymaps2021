@@ -2,8 +2,8 @@ baseURL = "https://allixender.github.io/30daymaps2021/"
 languageCode = "en-us"
 title = "#DayMapChallenge 2021"
 theme = "mediumish-gohugo-theme"
-summaryLength = 25
-copyright = "Alexander Kmoch"
+summaryLength = 0
+copyright = "2021 Alexander Kmoch CC-SA-BY 4.0"
 enableEmoji = true
 publishDir = "docs"
 #disqusShortname = "your-shortname-here"
@@ -21,10 +21,13 @@ publishDir = "docs"
 
 [params.index]
   picture = "/images/30dmpc_2021.png"
-  title = "#30DayMapChallenge 2021"
-  subtitle = "I try making some maps again..."
+  title = "I try making some maps again..."
+  subtitle = ""
   mdtext = '''
-This is my repo for [it](https://github.com/tjukanovt/30DayMapChallenge)
+### This is my repo for [maps](./maps)
+
+[tjukanovt/30DayMapChallenge](https://github.com/tjukanovt/30DayMapChallenge)
+
 '''
   alertbar = false
 

@@ -4,7 +4,7 @@ Hugo, with and without drafts:
   -D, --buildDrafts            include content marked as draft
   -d, --destination string     filesystem path to write files to
 
-hugo -b https://allixender.github.io/30daymaps2021/ --destination docs
+hugo -b https://allixender.github.io/30daymaps2021 --destination docs
 touch docs/.nojekyll
 
 
