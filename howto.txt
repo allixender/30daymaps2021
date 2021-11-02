@@ -11,3 +11,9 @@ touch docs/.nojekyll
 hugo -b https://allixender.github.io/30daymaps2021/ -D
 
 hugo server -b http://localhost/ -D --disableFastRender
+
+
+
+the theme:
+
+https://themes.gohugo.io/themes/mediumish-gohugo-theme/
