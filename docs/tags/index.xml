@@ -9,11 +9,29 @@
     <copyright>2021 Alexander Kmoch CC-SA-BY 4.0</copyright>
     <lastBuildDate>Mon, 01 Nov 2021 22:42:04 +0200</lastBuildDate><atom:link href="https://allixender.github.io/30daymaps2021/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>datashader</title>
+      <link>https://allixender.github.io/30daymaps2021/tags/datashader/</link>
+      <pubDate>Mon, 01 Nov 2021 22:42:04 +0200</pubDate>
+      
+      <guid>https://allixender.github.io/30daymaps2021/tags/datashader/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>maps</title>
       <link>https://allixender.github.io/30daymaps2021/tags/maps/</link>
       <pubDate>Mon, 01 Nov 2021 22:42:04 +0200</pubDate>
       
       <guid>https://allixender.github.io/30daymaps2021/tags/maps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wfs</title>
+      <link>https://allixender.github.io/30daymaps2021/tags/wfs/</link>
+      <pubDate>Mon, 01 Nov 2021 22:42:04 +0200</pubDate>
+      
+      <guid>https://allixender.github.io/30daymaps2021/tags/wfs/</guid>
       <description></description>
     </item>
     

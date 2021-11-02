@@ -8,7 +8,7 @@
             {{ with .Site.Params.index.picture }}
                 <img src="{{ . | urlize | relURL }}" class="rounded-circle text-center index-image">
             {{ end }}
-            <h1 class="index-title">{{ .Site.Params.index.title }}</h1>
+            <h2 class="index-title">{{ .Site.Params.index.title }}</h2>
         </header>
 
         <section class="text-center">
@@ -16,7 +16,7 @@
             <h3 class="index-sub">{{ . }}</h3>
             {{ end }}
             {{ with .Site.Params.index.mdtext }}
-            <h6 class="index-text">{{ . | markdownify }}</h6>
+            <h4 class="index-text">{{ . | markdownify }}</h4>
             {{ end }}
         </section>
     </div>

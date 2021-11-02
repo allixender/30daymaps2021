@@ -2,7 +2,7 @@
 title: "Day 01 Points"
 date: 2021-11-01T22:42:04+02:00
 image: "/images/maps/day-01.png"
-tags: ["maps"]
+tags: ["maps", "datashader", "wfs"]
 comments: false
 draft: false
 ---
