@@ -11,7 +11,7 @@ publishDir = "docs"
 
 [params]
   logo = "/images/logo.png"
-  description ="map maps maps"
+  description ="maps maps maps"
   #mailchimp = "you can provide a mailchimp-link here"
 
 [params.author]
@@ -24,9 +24,9 @@ publishDir = "docs"
   title = "I try making some maps again..."
   subtitle = ""
   mdtext = '''
-### This is my repo for [maps](./maps)
+### This is my [repo](./maps)
 
-[tjukanovt/30DayMapChallenge](https://github.com/tjukanovt/30DayMapChallenge)
+Also, check out [tjukanovt/30DayMapChallenge](https://github.com/tjukanovt/30DayMapChallenge)
 
 '''
   alertbar = false

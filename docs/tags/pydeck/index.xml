@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pydeck on #DayMapChallenge 2021</title>
+    <link>https://allixender.github.io/30daymaps2021/tags/pydeck/</link>
+    <description>Recent content in pydeck on #DayMapChallenge 2021</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2021 Alexander Kmoch CC-SA-BY 4.0</copyright>
+    <lastBuildDate>Tue, 02 Nov 2021 22:42:04 +0200</lastBuildDate><atom:link href="https://allixender.github.io/30daymaps2021/tags/pydeck/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Day 02 Lines</title>
+      <link>https://allixender.github.io/30daymaps2021/maps/day-02/</link>
+      <pubDate>Tue, 02 Nov 2021 22:42:04 +0200</pubDate>
+      
+      <guid>https://allixender.github.io/30daymaps2021/maps/day-02/</guid>
+      <description>Tartu Roads</description>
+    </item>
+    
+  </channel>
+</rss>
