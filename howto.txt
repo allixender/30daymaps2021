@@ -6,6 +6,8 @@ Hugo, with and without drafts:
 
 hugo -b https://allixender.github.io/30daymaps2021 --destination docs
 touch docs/.nojekyll
+git add .
+git commit -m "
 
 
 hugo -b https://allixender.github.io/30daymaps2021/ -D

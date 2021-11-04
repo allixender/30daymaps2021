@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- deck.gl standalone bundle -->
+  <script src="https://unpkg.com/h3-js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/deck.gl@8.6.2/dist.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <!-- optional if mapbox base map is needed -->
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+
+  <style type="text/css">
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #container {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+
+    #deck-map-container {
+      width: 100%;
+      height: 100%;
+      background-color: black;
+    }
+
+    #map {
+      pointer-events: none;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: 1;
+    }
+
+    #deckgl-overlay {
+      z-index: 2;
+      background: none;
+    }
+
+    #deck-map-wrapper {
+      width: 100%;
+      height: 100%;
+    }
+
+    #deck-container {
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container"></div>
+</body>
+
+<script type="text/javascript">
+
+const {DeckGL, H3HexagonLayer} = deck;
+
+  const h3_data = "https://dggs-api-bozea3cspa-ew.a.run.app/dggs-api/collections/srtm_30m_estonia_h3/zones?resolution=6&limit=5000"
+
+  function checkElev(feat) {
+    return feat.properties.elevation > 0.2;
+  };
+
+  const activate = () => {
+      axios.get(h3_data)
+          .then(response => {
+              const features = response.data.features;
+              console.log(`GET list users`, features[0]);
+              features.filter(checkElev)
+
+
+
+/*
+   "lineWidthMinPixels": 1, "lineWidthScale": 7, "opacity": 0.1, "pickable": true, "stroked": true}
+*/
+              const layer = new H3HexagonLayer({
+                id: 'H3HexagonLayer',
+                data: features,
+                elevationScale: 30,
+                extruded: true,
+                filled: true,
+                getElevation: d => d.properties.elevation * 10,
+                getFillColor: d => [255, (1 - Math.round(d.properties.elevation) / 500) * 255, 0],
+                getHexagon: d => d.id,
+                getLineColor: [255, 255, 255, 200],
+                getLineWidth: 3,
+
+                highPrecision: 'auto',
+                // lineJointRounded: false,
+                // lineMiterLimit: 4,
+                // lineWidthMaxPixels: Number.MAX_SAFE_INTEGER,
+                lineWidthMinPixels: 1,
+                lineWidthScale: 3,
+                // lineWidthUnits: 'meters',
+                // material: true,
+                stroked: true,
+                wireframe: false,
+
+                /* props inherited from Layer class */
+
+                // autoHighlight: false,
+                // coordinateOrigin: [0, 0, 0],
+                // coordinateSystem: COORDINATE_SYSTEM.LNGLAT,
+                // highlightColor: [0, 0, 128, 128],
+                // modelMatrix: null,
+                opacity: 0.4,
+                pickable: true,
+                // visible: true,
+                // wrapLongitude: false,
+              });
+
+              new DeckGL({
+                mapStyle: 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json',
+                initialViewState: {
+
+                  longitude:  25.72,
+                  latitude: 58.17,
+                  zoom: 6,
+                  maxZoom: 20,
+                  pitch: 45,
+                  bearing: 10
+                },
+                controller: true,
+                getTooltip: ({object}) => object && `avg. elevation: ${object.properties.elevation.toFixed(1)})`,
+                layers: [layer]
+              });
+})
+.catch(error => console.error(error));
+};
+
+activate();
+
+</script>
+
+</html>

@@ -49,7 +49,7 @@
     </div>
   </body>
   <script>
-    const jsonInput = {"initialViewState": {"bearing": 15, "latitude": 58.37, "longitude": 26.72, "pitch": 25, "zoom": 12}, "layers": [{"@@type": "GeoJsonLayer", "data": "https://allixender.github.io/30daymaps2021/maps/day-03/stats84.json", "filled": true, "getElevation": 10, "getFillColor": "@@=[0, 220, 255]", "getLineColor": "@@=[255, 255, 255]", "getLineWidth": 3, "id": "1f92556c-f569-47bf-82bc-b044d72efb5a", "lineWidthMinPixels": 1, "lineWidthScale": 7, "opacity": 0.1, "pickable": true, "stroked": true}], "mapProvider": "carto", "mapStyle": "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json", "views": [{"@@type": "MapView", "controller": true}]};
+    const jsonInput = {"initialViewState": {"bearing": 15, "latitude": 58.37, "longitude": 26.72, "pitch": 25, "zoom": 12}, "layers": [{"@@type": "GeoJsonLayer", "data": "https://allixender.github.io/30daymaps2021/maps/day-03/stats84.json", "filled": true, "getElevation": 10, "getFillColor": "@@=[0, 220, 255]", "getLineColor": "@@=[255, 255, 255]", "getLineWidth": 3, "id": "1f92556c-f569-47bf-82bc-b044d72efb5a", "lineWidthMinPixels": 1, "lineWidthScale": 7, "opacity": 0.1, "pickable": true, "getText": f => f.properties.name,"stroked": true}], "mapProvider": "carto", "mapStyle": "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json", "views": [{"@@type": "MapView", "controller": true}]};
     const tooltip = true;
     const customLibraries = null;
 
