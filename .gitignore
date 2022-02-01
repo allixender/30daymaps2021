@@ -130,3 +130,4 @@ dmypy.json
 
 # data ignores
 work/gtfs_estonia_problem
+.hugo_build.lock
